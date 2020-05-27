@@ -8,6 +8,6 @@ metadata:
 spec:
     containers:
     - name: txn-portal
-        image: rishabhsagar/txndemo:portal
-        ports:
-        - containerPort: 5000 
+      image: rishabhsagar/txndemo:portal
+      ports:
+      - containerPort: 5000 
