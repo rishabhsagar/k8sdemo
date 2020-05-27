@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: txn-worker-pod
+    labels:
+        name: txn-worker-pod
+        app: demo-txn-app
+spec:
+    containers:
+        - name: txn-worker
+          image: rishabhsagar/txndemo:txnprocessor

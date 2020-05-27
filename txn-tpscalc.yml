@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: txn-tpscalc-pod
+    labels:
+        name: txn-tpscalc-pod
+        app: demo-txn-app
+spec:
+    containers:
+    - name: txn-tpscalc
+        image: rishabhsagar/txndemo:tpscalc

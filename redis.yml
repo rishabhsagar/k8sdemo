@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: txn-redis-pod
+    labels:
+        name: txn-redis-pod
+        app: demo-txn-app
+spec:
+    containers:
+    - name: redis
+        image: redis
+        ports:
+        - containerPort: 6379

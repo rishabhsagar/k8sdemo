@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: txn-gen-pod
+    labels:
+        name: txn-gen-pod
+        app: demo-txn-app
+spec:
+    containers:
+        - name: txn-gen
+          image: rishabhsagar/txndemo:txngenerator
